@@ -16,8 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 
-// app.use(require("./controllers/"));
-// This line throws an error when I start server with it uncommented. Need to figure out how to get it to work so that we can use routes files in controllers folder
+app.use(require("./controllers/"));
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening on port ${PORT}`));
