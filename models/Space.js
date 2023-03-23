@@ -19,11 +19,11 @@ Space.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    max_occupany_no_tbl: {
+    max_occupancy_no_tbl: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    max_occupany_tbl: {
+    max_occupancy_tbl: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },

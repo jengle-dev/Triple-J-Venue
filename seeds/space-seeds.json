@@ -1,0 +1,72 @@
+[
+  {
+    "space_name": "Grand Rotunda",
+    "square_feet": 3750,
+    "max_occupancy_no_tbl": 375,
+    "max_occupancy_tbl": 350,
+    "max_tables_r": 44,
+    "max_tables_l": 80,
+    "max_chairs": 375,
+    "dj": true,
+    "dancefloor": true,
+    "projector": true,
+    "media_ready": true,
+    "expandable": false
+  },
+  {
+    "space_name": "Business Center",
+    "square_feet": 800,
+    "max_occupancy_no_tbl": 80,
+    "max_occupancy_tbl": 60,
+    "max_tables_r": 0,
+    "max_tables_l": 15,
+    "max_chairs": 75,
+    "dj": false,
+    "dancefloor": false,
+    "projector": true,
+    "media_ready": true,
+    "expandable": false
+  },
+  {
+    "space_name": "Exhibit Hall A",
+    "square_feet": 1500,
+    "max_occupancy_no_tbl": 150,
+    "max_occupancy_tbl": 120,
+    "max_tables_r": 15,
+    "max_tables_l": 26,
+    "max_chairs": 120,
+    "dj": true,
+    "dancefloor": true,
+    "projector": true,
+    "media_ready": true,
+    "expandable": true
+  },
+  {
+    "space_name": "Exhibit Hall B",
+    "square_feet": 1500,
+    "max_occupancy_no_tbl": 150,
+    "max_occupancy_tbl": 120,
+    "max_tables_r": 15,
+    "max_tables_l": 26,
+    "max_chairs": 120,
+    "dj": true,
+    "dancefloor": true,
+    "projector": true,
+    "media_ready": true,
+    "expandable": true
+  },
+  {
+    "space_name": "Exhibit Hall C",
+    "square_feet": 1500,
+    "max_occupancy_no_tbl": 150,
+    "max_occupancy_tbl": 120,
+    "max_tables_r": 15,
+    "max_tables_l": 26,
+    "max_chairs": 120,
+    "dj": true,
+    "dancefloor": true,
+    "projector": true,
+    "media_ready": true,
+    "expandable": true
+  }
+]
