@@ -6,3 +6,72 @@
     box-sizing: border-box;
     font-family: 'Arvo', serif;
 }
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: lightcoral;
+}
+
+.container {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-size: 2rem;
+}
+
+.wrapper {
+    width: 450px;
+    background-color: cornsilk;
+    border-radius: 10px;
+}
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+header .current-date {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+header .icons span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+header .icons span:hover {
+    background-color: burlywood;
+}
+
+header .icons span:last-child {
+margin-right: -10px;
+}
+
+.calendar ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.calendar ul li {
+    width: calc(100% / 7);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
