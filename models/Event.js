@@ -31,6 +31,14 @@ Event.init(
         key: "space_name",
       },
     },
+    requestor_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "user",
+        key: "id",
+      },
+    },
     status: {
       type: DataTypes.STRING,
       allowNull: false,
