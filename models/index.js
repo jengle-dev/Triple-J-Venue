@@ -8,6 +8,6 @@ Event.belongsTo(User, {
 });
 
 Event.hasOne(Space, {
-  foreignKey: "space_name",
+  foreignKey: "space_id",
   onDelete: "CASCADE",
 });

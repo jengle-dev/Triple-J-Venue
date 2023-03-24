@@ -23,12 +23,12 @@ Event.init(
       type: DataTypes.TIME,
       allowNull: false,
     },
-    space: {
-      type: DataTypes.STRING,
+    space_id: {
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: "space",
-        key: "space_name",
+        key: "id",
       },
     },
     requestor_id: {
@@ -49,7 +49,7 @@ Event.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: "user",
+    modelName: "event",
   }
 );
 
