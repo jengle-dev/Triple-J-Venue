@@ -1,0 +1,47 @@
+[
+  {
+    "date": "2023-03-27",
+    "event_name": "Event 1",
+    "start_time": "09:00:00",
+    "end_time": "11:00:00",
+    "space_id": 1,
+    "requestor_id": 2,
+    "status": "approved"
+  },
+  {
+    "date": "2023-03-28",
+    "event_name": "Event 2",
+    "start_time": "13:00:00",
+    "end_time": "15:00:00",
+    "space_id": 2,
+    "requestor_id": 2,
+    "status": "pending"
+  },
+  {
+    "date": "2023-03-29",
+    "event_name": "Event 3",
+    "start_time": "10:00:00",
+    "end_time": "12:00:00",
+    "space_id": 3,
+    "requestor_id": 3,
+    "status": "denied"
+  },
+  {
+    "date": "2023-03-30",
+    "event_name": "Event 4",
+    "start_time": "14:00:00",
+    "end_time": "16:00:00",
+    "space_id": 4,
+    "requestor_id": 4,
+    "status": "approved"
+  },
+  {
+    "date": "2023-03-31",
+    "event_name": "Event 5",
+    "start_time": "11:00:00",
+    "end_time": "13:00:00",
+    "space_id": 5,
+    "requestor_id": 5,
+    "status": "pending"
+  }
+]

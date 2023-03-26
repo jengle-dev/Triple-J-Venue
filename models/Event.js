@@ -11,6 +11,12 @@ Event.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    event_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      isAlphanumeric: true,
+    },
     date: {
       type: DataTypes.DATEONLY,
       allowNull: false,
@@ -42,7 +48,7 @@ Event.init(
     status: {
       type: DataTypes.STRING,
       allowNull: false,
-      defaultValue: "Pending",
+      defaultValue: "pending",
     },
   },
   {

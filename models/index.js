@@ -7,7 +7,9 @@ Event.belongsTo(User, {
   onDelete: "CASCADE",
 });
 
-Event.hasOne(Space, {
+Space.hasMany(Event, {
   foreignKey: "space_id",
   onDelete: "CASCADE",
 });
+
+module.exports = { Space, Event };
