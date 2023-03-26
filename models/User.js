@@ -42,6 +42,10 @@ User.init(
         len: [8],
       },
     },
+    is_owner: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    },
   },
   {
     sequelize,
