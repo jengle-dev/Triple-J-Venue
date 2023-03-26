@@ -11,6 +11,12 @@ Event.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    event_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      isAlphanumeric: true,
+    },
     date: {
       type: DataTypes.DATEONLY,
       allowNull: false,
@@ -23,12 +29,12 @@ Event.init(
       type: DataTypes.TIME,
       allowNull: false,
     },
-    space: {
-      type: DataTypes.STRING,
+    space_id: {
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: "space",
-        key: "space_name",
+        key: "id",
       },
     },
     requestor_id: {
@@ -42,14 +48,14 @@ Event.init(
     status: {
       type: DataTypes.STRING,
       allowNull: false,
-      defaultValue: "Pending",
+      defaultValue: "pending",
     },
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: "user",
+    modelName: "event",
   }
 );
 
