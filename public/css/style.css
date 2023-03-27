@@ -8,24 +8,24 @@
 }
 
 body {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: lightcoral;
+    background-color: tan;
 }
 
 .container {
     width: 100%;
-    background-color: black;
-    color: white;
+    color: black;
     height: 50px;
     font-size: 2rem;
+    display: block
 }
 
 .wrapper {
+    display: block;
     width: 450px;
-    background-color: cornsilk;
     border-radius: 10px;
 }
 
@@ -50,23 +50,21 @@ header .icons span {
     line-height: 38px;
     border-radius: 50%;
 }
-header .icons span:hover {
+/* header .icons span:hover {
     background-color: burlywood;
-}
+} */
 
-header .icons span:last-child {
+/* header .icons span:last-child {
 margin-right: -10px;
+} */
+
+.calendar {
+    display: block;
 }
 
-.calendar ul {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-}
-
-.calendar ul li {
+/* .calendar ul li {
     width: calc(100% / 7);
-}
+} */
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -75,3 +73,4 @@ margin-right: -10px;
   'GRAD' 0,
   'opsz' 48
 }
+
