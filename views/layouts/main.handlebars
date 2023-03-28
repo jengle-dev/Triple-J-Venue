@@ -7,10 +7,10 @@
     {{!-- Google Fonts - font used in Logo and want to repeat throughout. --}}
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link href="./public/css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
 
-  <body>
+  {{!-- <body>
     <main>
     <head>
     <meta charset="UTF-8" />
@@ -18,12 +18,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dummy HTML</title>
     <link href="./public/css/style.css" rel="stylesheet" />
-   </head>
+   </head> --}}
      <body>
     <!-- header background image -->
     <img
       class="max-h-24 w-full"
-      src="./public/images/GoldenBokeh-horizontal.png"
+      src="/images/GoldenBokeh-horizontal.png"
       alt="golden bokeh glitter pattern"
     />
     <!-- Navbar -->
@@ -34,12 +34,12 @@
             <!-- Logo -->
             <img
               class="block h-32 w-auto lg:hidden"
-              src="./public/images/Triple-J-Logo.png"
+              src="/images/Triple-J-Logo.png"
               alt="Triple J Event Venue Logo"
             />
             <img
               class="hidden h-32 w-auto lg:block"
-              src="./public/images/Triple-J-Logo.png"
+              src="/images/Triple-J-Logo.png"
               alt="Triple J Event Venue Logo"
             />
           </div>
@@ -202,6 +202,7 @@
     <!-- End of Nav -->
 
 {{!-- Dynamic handlebars --}}
+<main>
       {{{body}}}
 
 {{!-- static footer --}}
@@ -220,6 +221,7 @@
         <!-- CDNs -->
     <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
     <script src="../path/to/flowbite/dist/datepicker.js"></script>
+
 
   </body>
 </html>

@@ -6,11 +6,22 @@ const Event = require("../../models/Event");
 // create new user
 router.post("/", async (req, res) => {
   try {
-    const newUser = req.body;
-    newUser.password = await bcrypt.hash(req.body.password, 10);
-    const userData = await User.create(newUser);
+    // const newUser = req.body;
+    // newUser.password = await bcrypt.hash(req.body.password, 10);
+    // const userData = await User.create(newUser);
+    // res.status(200).json(userData);
+    const password = await bcrypt.hash(req.body.password, 10);
+    const userData = await User.create({
+      username: req.body.username,
+      first_name: req.body.first_name,
+      last_name: req.body.last_name,
+      email: req.body.email,
+      phone: req.body.phone,
+      password: password,
+    });
     res.status(200).json(userData);
   } catch (err) {
+    console.log(err);
     res.status(400).json(err);
   }
 });
