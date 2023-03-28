@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
 router.get("/", async (req, res) => {
-  res.render("landingpage");
+  res.render("register");
 });
 
 module.exports = router;
