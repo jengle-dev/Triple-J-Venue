@@ -38,7 +38,7 @@ router.post("/login", async (req, res) => {
       return;
     }
 
-    res.status(200).json({ message: "Sucess!" });
+    res.status(200).json({ message: "Success!" });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -48,7 +48,7 @@ router.post("/login", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     const userData = await User.findByPk(req.params.id, {
-      include: [{ model: Event }],
+      include: [{ model: Event }], //this is currently throwing an error
     });
     const user = userData.get({ plain: true });
     res.status(200).json(user);
