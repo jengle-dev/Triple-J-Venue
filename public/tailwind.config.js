@@ -5,7 +5,9 @@ module.exports = {
       'white': '#f5f5f5',
       'black': '#171717',
       'cream': '#fef3c7',
-      'maroon': '#9f1239'
+      'maroon': '#9f1239',
+      'slate': '#e4e4e7',
+      'lightSlate': '#fafafa'
     },
     fontFamily: {
       sans: ['ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;'],
