@@ -196,8 +196,8 @@
 
 
 {{!-- "is_owner": false will be default --}} -->
-<div class="wrapper">
-<div class="container bg-gray-300">
+<div class=" display: justify-center p-4 m-3 w-2/5">
+<div class="container ">
 <form>
   <div class="grid gap-6 mb-6 md:grid-cols-2">
     <div>
@@ -261,7 +261,7 @@
         type="tel"
         id="phone"
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-        placeholder="123-456-7890"
+        placeholder="000-000-0000"
         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
         required
       />
@@ -280,7 +280,7 @@
       required
     />
   </div>
-  <div class="mb-6">
+  <div class="mb-7">
     <label
       for="confirm_password"
       class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -315,10 +315,12 @@
     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
   >Submit</button>
 </form>
-</div>
+<footer class=" p-3 m-3 w-full bg-black text-white text-lg place-content-stretch" > 123 Anywhere Street | Kansas City, MO 64105 | 816.888.8888 | Contact Us </footer>
 </div>
 
-<br>
+</div>
+
+<br class="m-8">
 
 <!-- Calendar -->
 <!-- {{! Dynamic Calendar  }}
@@ -336,11 +338,15 @@
 
 
 <div inline-datepicker data-date="03/27/2023"></div> -->
-<footer class="fixed-center max-w-fit bg-black text-white" >123 Anywhere Street | Kansas City, MO 64105 | 816.888.8888 <br>Contact Us</footer>
+
 
 </main>
+
     <!-- CDNs -->
     <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
     <script src="../path/to/flowbite/dist/datepicker.js"></script>
   </body>
+
+  
 </html>
+
