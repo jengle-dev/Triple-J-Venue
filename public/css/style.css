@@ -50,6 +50,12 @@ header .icons span {
     line-height: 38px;
     border-radius: 50%;
 }
+
+.aboutUs {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 /* header .icons span:hover {
     background-color: burlywood;
 } */
