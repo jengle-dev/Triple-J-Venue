@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: tan;
+    background-color: burlywood;
 }
 
 .container {
@@ -60,11 +60,18 @@ margin-right: -10px;
 
 .calendar {
     display: block;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-block-start: 100px;
 }
 
-/* .calendar ul li {
-    width: calc(100% / 7);
-} */
+
+.date-picker-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .material-symbols-outlined {
   font-variation-settings:
