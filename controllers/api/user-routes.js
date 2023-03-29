@@ -6,10 +6,6 @@ const Event = require("../../models/Event");
 // create new user
 router.post("/", async (req, res) => {
   try {
-    // const newUser = req.body;
-    // newUser.password = await bcrypt.hash(req.body.password, 10);
-    // const userData = await User.create(newUser);
-    // res.status(200).json(userData);
     const password = await bcrypt.hash(req.body.password, 10);
     const userData = await User.create({
       username: req.body.username,
@@ -30,11 +26,11 @@ router.post("/", async (req, res) => {
 router.post("/login", async (req, res) => {
   try {
     const userData = await User.findOne({
-      where: { username: req.body.username },
+      where: { email: req.body.email },
     });
     if (!userData) {
       res.status(404).json({
-        message: "There is no account associated with that username.",
+        message: "There is no account associated with that email address.",
       });
       return;
     }

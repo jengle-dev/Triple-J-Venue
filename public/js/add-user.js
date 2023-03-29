@@ -1,6 +1,5 @@
 async function newFormHandler(event) {
   event.preventDefault();
-  console.log("clicked");
   const username = document.querySelector("#username").value;
   const first_name = document.querySelector("#first_name").value;
   const last_name = document.querySelector("#last_name").value;
@@ -8,8 +7,6 @@ async function newFormHandler(event) {
   const phone = document.querySelector("#phone").value;
   const password = document.querySelector("#password").value;
   const confirmPassword = document.querySelector("#confirm_password").value;
-
-  console.log(username, first_name, last_name, email, phone, password);
 
   if (password !== confirmPassword) {
     alert("passwords must match");
