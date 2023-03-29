@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const Event = require("../models/Event");
 
 router.get("/", async (req, res) => {
   res.render("landingpage");
@@ -13,7 +14,9 @@ router.get("/login", async (req, res) => {
 });
 
 router.get("/calendar", async (req, res) => {
-  res.render("calendar");
+  const eventData = await Event.findAll();
+  const events = eventData.map((event) => event.get({ plain: true }));
+  res.render("calendar", { events });
 });
 
 router.get("/about-us", async (req, res) => {

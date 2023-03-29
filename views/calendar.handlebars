@@ -41,4 +41,16 @@
       your event date is available, please click on your event date or your
       event month.</p>
   </div>
+  {{#each events as |event|}}
+    <p>
+      {{event.date}}
+      {{event.event_name}}
+      Start time:
+      {{event.start_time}}
+      End time:
+      {{event.end_time}}
+      Space ID:
+      {{event.space_id}}
+    </p>
+  {{/each}}
 </div>
