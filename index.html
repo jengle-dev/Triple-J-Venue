@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dummy HTML</title>
+  <link href="./public/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+    <!-- header background image -->
+    <img class="max-h-24 w-full" src="./public/images/GoldenBokeh-horizontal.png" alt="golden bokeh glitter pattern" />
+    <!-- Navbar -->
+    <nav class="bg-black h-20">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-24 items-center justify-between">
+          <div class="flex flex-shrink-0 items-center">
+            <!-- Logo -->
+            <img class="block h-32 w-auto lg:hidden" src="./public/images/Triple-J-Logo.png"
+              alt="Triple J Event Venue Logo" />
+            <img class="hidden h-32 w-auto lg:block" src="./public/images/Triple-J-Logo.png"
+              alt="Triple J Event Venue Logo" />
+          </div>
+          <!-- Nav options -->
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#"
+                  class="bg-gray-900 hover:bg-gray-700 hover:text-white text-white rounded-md px-3 py-2 text-sm font-medium"
+                  aria-current="page">Home</a>
+
+                <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white text-white rounded-md px-3 py-2 text-sm font-medium"
+                  aria-current="page">Rental Spaces</a>
+
+                <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About
+                  Us</a>
+
+                <!-- <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"></a> -->
+                <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
+
+                  <!-- hide if session is true -->
+                  <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium sign-in">Sign In</a>
+                     <!-- hide if session is false -->
+                     <a href="#"
+                     class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium sign-out">Sign Out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Nav -->
+    <br>
+
+    <!-- Form for Registration -->
+    <!-- {{! Registration Page Form }}
+
+
+{{!-- "is_owner": false will be default --}} -->
+    <div class=" display: justify-center p-4 m-3 w-2/5">
+      <div class="container ">
+        <form>
+          <div class="grid gap-6 mb-6 md:grid-cols-2">
+            <div>
+              <label for="username"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username</label>
+              <input type="text" id="username"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="John" required />
+            </div>
+            <div>
+              <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First
+                name</label>
+              <input type="text" id="first_name"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="John" required />
+            </div>
+            <div>
+              <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last
+                name</label>
+              <input type="text" id="last_name"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Doe" required />
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email
+                address</label>
+              <input type="email" id="email"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="john.doe@company.com" required />
+            </div>
+            <div>
+              <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone
+                number</label>
+              <input type="tel" id="phone"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+            </div>
+          </div>
+          <div class="mb-6">
+            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+            <input type="password" id="password"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="•••••••••" required />
+          </div>
+          <div class="mb-7">
+            <label for="confirm_password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm
+              password</label>
+            <input type="password" id="confirm_password"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="•••••••••" required />
+          </div>
+          <div class="flex items-start mb-6">
+            <div class="flex items-center h-5">
+              <input id="remember" type="checkbox" value=""
+                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
+                required />
+            </div>
+            <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the
+              <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms
+                and conditions</a>.</label>
+          </div>
+          <button type="submit"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+        </form>
+        <footer class=" p-3 m-3 w-full bg-black text-white text-lg place-content-stretch"> 123 Anywhere Street | Kansas
+          City, MO 64105 | 816.888.8888 | Contact Us </footer>
+      </div>
+
+    </div>
+
+    <br class="m-8">
+
+    <footer
+      class="fixed bottom-0 left-0 z-20 w-full p-4 bg-black border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+      <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2023 Triple J Event Venue. All Rights
+        Reserved.
+      </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li class="px-2.5">123 Anywhere Street | Kansas City, MO 64105 | 816.888.8888</li>
+        <li>
+          <a href="mailto:notarealemail@nothing.com" class="hover:underline px-2.5">Contact Us</a>
+        </li>
+      </ul>
+    </footer>
+  </main>
+
+  <!-- CDNs -->
+  <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+  <script src="../path/to/flowbite/dist/datepicker.js"></script>
+</body>
+
+
+</html>

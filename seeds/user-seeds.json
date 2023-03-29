@@ -4,7 +4,56 @@
     "first_name": "Jacob",
     "last_name": "Boyce",
     "email": "jboyce313@gmail.com",
-    "phone": "8165109809",
-    "password": "Taffy123"
+    "phone": "816-510-9809",
+    "password": "Taffy123",
+    "is_owner": true
+  },
+  {
+    "username": "bigTony",
+    "first_name": "Tony",
+    "last_name": "Sarpino",
+    "email": "tsarpino_12@gmail.com",
+    "phone": "816-555-1234",
+    "password": "thunderball"
+  },
+  {
+    "username": "johndoe",
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "johndoe@example.com",
+    "phone": "555-555-5555",
+    "password": "p@ssw0rd1"
+  },
+  {
+    "username": "janedoe",
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "email": "janedoe@example.com",
+    "phone": "555-123-4567",
+    "password": "p@ssw0rd2"
+  },
+  {
+    "username": "brian",
+    "first_name": "Brian",
+    "last_name": "Johnson",
+    "email": "bjohnson@example.com",
+    "phone": "555-999-8888",
+    "password": "p@ssw0rd3"
+  },
+  {
+    "username": "alice",
+    "first_name": "Alice",
+    "last_name": "Smith",
+    "email": "asmith@example.com",
+    "phone": "555-444-3333",
+    "password": "p@ssw0rd4"
+  },
+  {
+    "username": "charlie",
+    "first_name": "Charlie",
+    "last_name": "Brown",
+    "email": "cbrown@example.com",
+    "phone": "555-777-6666",
+    "password": "p@ssw0rd5"
   }
 ]
