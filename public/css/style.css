@@ -75,10 +75,15 @@ header .icons span {
 
 .imageContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+img {
+    margin: 25px;
 }
 
 .material-symbols-outlined {
