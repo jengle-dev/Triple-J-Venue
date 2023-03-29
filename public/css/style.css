@@ -27,6 +27,8 @@ body {
     display: block;
     width: 450px;
     border-radius: 10px;
+    text-align: center;
+    align-items: center;
 }
 
 .wrapper header {
@@ -49,6 +51,12 @@ header .icons span {
     text-align: center;
     line-height: 38px;
     border-radius: 50%;
+}
+
+.aboutUs {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 /* header .icons span:hover {
     background-color: burlywood;
