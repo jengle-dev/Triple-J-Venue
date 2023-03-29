@@ -32,6 +32,8 @@ router.post("/login", async (req, res) => {
       where: { email: req.body.email },
     });
     if (!userData) {
+      res.statusMessage =
+        "There is no account associated with that email address.";
       res.status(404).json({
         message: "There is no account associated with that email address.",
       });
@@ -44,6 +46,7 @@ router.post("/login", async (req, res) => {
     );
 
     if (!validPassword) {
+      res.statusMessage = "Incorrect password.";
       res.status(400).json({ message: "Incorrect password." });
       return;
     }

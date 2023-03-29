@@ -1,7 +1,7 @@
 async function login(event) {
   event.preventDefault();
-  const email = document.querySelector("#email-address").value;
-  const password = document.querySelector("#password").value;
+  const email = document.querySelector("#email-address").value.trim();
+  const password = document.querySelector("#password").value.trim();
 
   const response = await fetch("/api/users/login", {
     method: "POST",
@@ -14,11 +14,13 @@ async function login(event) {
     },
   });
 
+  console.log(response);
+
   if (response.ok) {
     console.log("login successful");
     document.location.replace("/calendar");
   } else {
-    alert("Login failed");
+    alert(response.statusText);
   }
 }
 
