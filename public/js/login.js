@@ -16,7 +16,7 @@ async function login(event) {
 
   if (response.ok) {
     console.log("login successful");
-    document.location.replace("/");
+    document.location.replace("/calendar");
   } else {
     alert("Login failed");
   }

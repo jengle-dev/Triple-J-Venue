@@ -28,10 +28,21 @@ async function newFormHandler(event) {
     },
   });
 
+  console.log(response.statusText);
+
   if (response.ok) {
-    alert("user successfully added");
+    alert("Account created");
+    document.location.replace("/login");
   } else {
-    alert("failed to add user");
+    if (response.statusText === "email must be unique") {
+      alert("There is already an account associated with that email address.");
+    } else if (response.statusText === "username must be unique") {
+      alert("There is already an account associated with that username.");
+    } else if (response.statusText === "phone must be unique") {
+      alert("There is already an account associated with that phone number.");
+    } else {
+      alert("Failed to add user.");
+    }
   }
 }
 

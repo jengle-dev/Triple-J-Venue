@@ -2,6 +2,7 @@ const router = require("express").Router();
 const bcrypt = require("bcrypt");
 const User = require("../../models/User");
 const Event = require("../../models/Event");
+const { json } = require("body-parser");
 
 // create new user
 router.post("/", async (req, res) => {
@@ -17,7 +18,9 @@ router.post("/", async (req, res) => {
     });
     res.status(200).json(userData);
   } catch (err) {
-    console.log(err);
+    console.log(err.errors[0].message);
+    const message = err.errors[0].message;
+    res.statusMessage = message;
     res.status(400).json(err);
   }
 });
