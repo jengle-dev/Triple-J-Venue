@@ -51,7 +51,17 @@ router.post("/login", async (req, res) => {
       return;
     }
 
-    res.status(200).json({ message: "Success!" });
+    req.session.save(() => {
+      req.session.loggedIn = true;
+      console.log(
+        "🚀 ~ file: user-routes.js ~ line 57 ~ req.session.save ~ req.session.cookie",
+        req.session.cookie
+      );
+
+      res
+        .status(200)
+        .json({ user: userData, message: "You are now logged in!" });
+    });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -60,9 +70,10 @@ router.post("/login", async (req, res) => {
 // get user by id
 router.get("/:id", async (req, res) => {
   try {
-    const userData = await User.findByPk(req.params.id, {
-      include: [{ model: Event }], //this is currently throwing an error
-    });
+    // const userData = await User.findByPk(req.params.id, {
+    //   include: [{ model: Event }], //this is currently throwing an error
+    // });
+    const userData = await User.findByPk(req.params.id);
     const user = userData.get({ plain: true });
     res.status(200).json(user);
   } catch (err) {
