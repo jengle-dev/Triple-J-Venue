@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dummy Calendar HTML</title>
+  <title>Dummy Venue Space HTML</title>
   <link href="./public/css/style.css" rel="stylesheet" />
 </head>
 
@@ -44,88 +44,175 @@
                 <!-- <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"></a> -->
                 <a href="#"
                   class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
+
+                <!-- hide if session is true -->
+                <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium sign-in">Sign
+                  In</a>
+                <!-- hide if session is false -->
+                <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium sign-out">Sign
+                  Out</a>
               </div>
             </div>
           </div>
-
-          <!-- Profile dropdown -->
-          <div class="relative ml-3">
-            <div>
-              <button type="button"
-                class="flex rounded-full bg-gray-600 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                <span class="sr-only">Open Menu</span>
-                <!-- User Icon from Hero Icons used by Tailwind -->
-                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z">
-                  </path>
-                </svg>
-              </button>
-            </div>
-
-            <!--
-                  Dropdown menu, show/hide based on menu state.
-      
-                  Entering: "transition ease-out duration-100"
-                    From: "transform opacity-0 scale-95"
-                    To: "transform opacity-100 scale-100"
-                  Leaving: "transition ease-in duration-75"
-                    From: "transform opacity-100 scale-100"
-                    To: "transform opacity-0 scale-95"
-                -->
-            <div
-              class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-              role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-              <!-- Active: "bg-gray-100", Not Active: "" -->
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                id="user-menu-item-0">Home</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                id="user-menu-item-1">Rental Space</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                id="user-menu-item-2">Calendar</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                id="user-menu-item-3">Your Profile</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                id="user-menu-item-4">Sign Out</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <!-- Mobile menu, show/hide based on menu state. -->
-      <div class="sm:hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pt-2 pb-3">
-          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
-            aria-current="page">Home</a>
-
-          <a href="#"
-            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Rental
-            Space</a>
-
-          <a href="#"
-            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
-
-          <a href="#"
-            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Your
-            Profile</a>
-
-          <a href="#"
-            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Sign
-            Out</a>
         </div>
       </div>
     </nav>
     <!-- End of Nav -->
-
+    <br>
+    <!-- Rental Space header -->
+    <div>
+      <h1
+        class="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        Rental Spaces</h1>
+    </div>
     <!-- Images of Spaces in Cards -->
-
+    <!-- grand rotunda -->
+    <div class="cardContainer m-7">
+      <div class="card max-w-sm bg-white m-7 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-lg m-8 object-scale-down w-80 place-content-center " src="./public/images/ibrahim-boran-m8YjB0noWiY-unsplash.jpg"
+          alt="Reception Hall with Round Tables and place settings" />
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Grand Rotunda</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <ul>
+            <li>Maximum Occupancy: 375</li>
+            <li>Media Ready: Yes</li>
+            <li>Projector: Yes</li>
+            <li>Maximum Long Tables: 80</li>
+            <li>Maximum Round Tables: 44</li>
+            <li>Expandable Space: No</li>
+          </ul>
+          </p>
+          <a href="/reservation"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-10">
+            Reserve Now
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- business center -->
+      <div class="card max-w-sm bg-white m-7 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-lg m-8 object-scale-down w-80 place-content-center" src="./public/images/evangeline-shaw-xRlI-L-kvrw-unsplash.jpg"
+          alt="Business Meeting People around a table" />
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Business Center</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <ul>
+            <li>Maximum Occupancy: 80</li>
+            <li>Media Ready: Yes</li>
+            <li>Projector: Yes</li>
+            <li>Maximum Long Tables: 15</li>
+            <li>Round Tables Unavailable for this space.</li>
+            <li>Expandable Space: No</li>
+          </ul>
+          </p>
+          <a href="/reservation"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-10">
+            Reserve Now
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- exhibit hall A -->
+      <div class="card max-w-sm bg-white m-7 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-lg m-8 object-scale-down w-80 place-content-center" src="./public/images/image-from-rawpixel-id-5960638-jpeg.jpg"
+          alt="Business Meeting" />
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Exhibit Hall A</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <ul>
+            <li>Maximum Occupancy: 150</li>
+            <li>Media Ready: Yes</li>
+            <li>Projector: Yes</li>
+            <li>Maximum Long Tables: 26</li>
+            <li>Maximum Round Tables: 15</li>
+            <li>Expandable Space: Yes</li>
+          </ul>
+          </p>
+          <a href="/reservation"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-10">
+            Reserve Now
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- exhibit hall b -->
+      <div class="card max-w-sm bg-white m-7 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-lg m-8 object-scale-down w-80 place-content-center" src="./public/images/stem-list-EVgsAbL51Rk-unsplash.jpg"
+          alt="business convention with screen" />
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Exhibit Hall B</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <ul>
+            <li>Maximum Occupancy: 150</li>
+            <li>Media Ready: Yes</li>
+            <li>Projector: Yes</li>
+            <li>Maximum Long Tables: 26</li>
+            <li>Maximum Round Tables: 15</li>
+            <li>Expandable Space: Yes</li>
+          </ul>
+          </p>
+          <a href="/reservation"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-10">
+            Reserve Now
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- exhibit hall c -->
+      <div class="card max-w-sm bg-white m-7 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-lg m-8 object-scale-down w-80 place-content-center" src="./public/images/thomas-william-OAVqa8hQvWI-unsplash.jpg"
+          alt="Business Meeting People around a table" />
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Exhibit Hall C</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <ul>
+            <li>Maximum Occupancy: 150</li>
+            <li>Media Ready: Yes</li>
+            <li>Projector: Yes</li>
+            <li>Maximum Long Tables: 26</li>
+            <li>Maximum Round Tables: 15</li>
+            <li>Expandable Space: Yes</li>
+          </ul>
+          </p>
+          <a href="/reservation"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-10">
+            Reserve Now
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
     <!-- footer -->
     <footer
-      class="fixed bottom-0 left-0 z-20 w-full p-4 bg-black border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+      class="bottom-0 left-0 z-20 w-full p-4 bg-black border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
       <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2023 Triple J Event Venue. All Rights
         Reserved.
       </span>

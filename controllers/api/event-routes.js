@@ -6,9 +6,17 @@ const Space = require("../../models/Space");
 // create new event
 router.post("/", async (req, res) => {
   try {
-    const eventData = await Event.create(req.body);
+    const eventData = await Event.create({
+      event_name: req.body.event_name,
+      date: req.body.date,
+      start_time: req.body.start_time,
+      end_time: req.body.end_time,
+      space_id: 1,
+      requestor_id: 1,
+    });
     res.status(200).json(eventData);
   } catch (err) {
+    console.log(err);
     res.status(400).json(err);
   }
 });

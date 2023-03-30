@@ -2,21 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dummy Landing Page HTML</title>
-    <link href="./public/css/style.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dummy Landing HTML</title>
+  <link href="./public/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <main>
-        <!-- header background image -->
-        <img class="max-h-24 w-full" src="./public/images/GoldenBokeh-horizontal.png"
-            alt="golden bokeh glitter pattern" />
-        <!-- Navbar -->
-        
-        <!-- End of Nav -->
+  <main>
+    <!-- header background image -->
+    <img class="max-h-24 w-full" src="./public/images/GoldenBokeh-horizontal.png" alt="golden bokeh glitter pattern" />
+    <!-- Navbar -->
+    <nav class="bg-black h-20">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-24 items-center justify-between">
+          <div class="flex flex-shrink-0 items-center">
+            <!-- Logo -->
+            <img class="block h-32 w-auto lg:hidden" src="./public/images/Triple-J-Logo.png"
+              alt="Triple J Event Venue Logo" />
+            <img class="hidden h-32 w-auto lg:block" src="./public/images/Triple-J-Logo.png"
+              alt="Triple J Event Venue Logo" />
+          </div>
+          <!-- Nav options -->
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#"
+                  class="bg-gray-900 hover:bg-gray-700 hover:text-white text-white rounded-md px-3 py-2 text-sm font-medium"
+                  aria-current="page">Home</a>
+
+                <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white text-white rounded-md px-3 py-2 text-sm font-medium"
+                  aria-current="page">Rental Spaces</a>
+
+                <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About
+                  Us</a>
+
+                <!-- <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"></a> -->
+                <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
+
+                  <!-- hide if session is true -->
+                  <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium sign-in">Sign In</a>
+                     <!-- hide if session is false -->
+                     <a href="#"
+                     class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium sign-out">Sign Out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Nav -->
+    <br>
 
         <!-- Landing Image  -->
         <div class="imageContainer">
@@ -42,12 +84,12 @@
         </div>
         <div class="imageContainer">
             <figure>
-                <a href="#"><img class="rounded-full w-40 h-40 shadow-xl dark:shadow-gray-800"
+                <a href="/reservations"><img class="rounded-full w-40 h-40 shadow-xl dark:shadow-gray-800"
                         src="./public/images/nick-karvounis-wnuHCwLJDqY-unsplash.jpg"></a>
                 <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-800">Reservations</figcaption>
             </figure>
             <figure>
-                <img class="rounded-full w-40 h-40 shadow-xl dark:shadow-gray-800"
+                <a href="/reservations"></a><img class="rounded-full w-40 h-40 shadow-xl dark:shadow-gray-800"
                     src="./public/images/ibrahim-boran-m8YjB0noWiY-unsplash.jpg">
                 <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-800">About Us</figcaption>
             </figure>
