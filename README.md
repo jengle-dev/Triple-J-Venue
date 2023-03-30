@@ -28,5 +28,8 @@ Jacob Kouns -  jacob.kouns01@gmail.com
 There is no license for this project.
 
 ## URL to GitHub Repo
-https://github.com/jengle-dev/CLI-Content-Management-System
+https://github.com/jengle-dev/Triple-J-Venue
+
+## Deployed Site
+https://triple-j-venues.herokuapp.com/
 
