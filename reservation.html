@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dummy Reservation HTML</title>
+  <link href="./public/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+    <!-- header background image -->
+    <img class="max-h-24 w-full" src="./public/images/GoldenBokeh-horizontal.png" alt="golden bokeh glitter pattern" />
+    <!-- Navbar -->
+    <nav class="bg-black h-20">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-24 items-center justify-between">
+          <div class="flex flex-shrink-0 items-center">
+            <!-- Logo -->
+            <img class="block h-32 w-auto lg:hidden" src="./public/images/Triple-J-Logo.png"
+              alt="Triple J Event Venue Logo" />
+            <img class="hidden h-32 w-auto lg:block" src="./public/images/Triple-J-Logo.png"
+              alt="Triple J Event Venue Logo" />
+          </div>
+          <!-- Nav options -->
+<!-- Nav options -->
+<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+    <div class="hidden sm:ml-6 sm:block">
+      <div class="flex space-x-4">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="/"
+          class="bg-gray-900 hover:bg-gray-700 hover:text-white text-white rounded-md px-3 py-2 text-sm font-medium"
+          aria-current="page">Home</a>
+
+        <a href="/spaces"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white text-white rounded-md px-3 py-2 text-sm font-medium"
+          aria-current="page">Rental Spaces</a>
+
+        <a href="/about-us"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About
+          Us</a>
+
+        <!-- <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"></a> -->
+        <a href="/calendar"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
+
+        <!-- hide if session is true -->
+        <a href="/login"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium sign-in">Sign
+          In</a>
+        <!-- hide if session is false -->
+        <a href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium sign-out">Sign
+          Out</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</nav>
+<!-- End of Nav -->
+
+<!-- Form to request Space Reservation -->
+<div class="spaces">
+<label for="Spaces" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select the space you want to reserve.</label>
+<select id="spaces" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+  <option>Grand Rotunda</option>
+  <option>Business Center</option>
+  <option>Exhibit Hall A</option>
+  <option>Exhibit Hall B</option>
+  <option>Exhibit Hall C</option>
+</select>
+</div>
+<!-- calendar  -->
+<div>
+    <div class="relative max-w-sm">
+        <div id="datepicker" class="calendar flex items-center justify-between dark:bg-gray-900"
+          github="plugins/datepicker.md" show_dark=true initDatepicker=true>
+          <input datepicker datepicker-buttons type="text"
+            class="bg-orange-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-100 focus:border-rose-900 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-orange-300 dark:text-white dark:focus:ring-orange-100 dark:focus:border-rose-900 placeholder-text:gray-700"
+            placeholder="Select date">
+        </div>
+         <!--toggles  -->
+        <div class="toggle"><label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" value="" class="sr-only peer" unchecked>
+            <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+            <span id="roundTable" class="roundTables ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">If needed, select for Round Tables</span>
+          </label>
+          </div>
+          <div class="toggle">
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" value="" class="sr-only peer" unchecked>
+            <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+            <span id="roundTable" class="roundTables ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">If needed, select for Long Tables</span>
+            </label>
+            </div>
+      </div>
+      <hr class="w-48 h-1 mx-auto my-4 bg-black border-0 rounded md:my-10 dark:bg-gray-700">
+</div>
+<div class="form eventType">
+    <label for="Event" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select the general type of event this is for.</label>
+    <select id="eventTypes" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <option>Wedding</option>
+      <option>Family Event</option>
+      <option>Business Meeting/Convention</option>
+      <option>Reception</option>
+      <option>Birthday/Life Celebration</option>
+      <option>Other</option>
+    </select>
+    </div>
+
+<div>
+    <div class="form">
+    <label for="small-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter your name</label>
+    <input type="text" id="small-input" class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    </div>
+    <div class="form">
+    <label for="small-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Estimated number of people</label>
+    <input type="text" id="small-input" class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    </div>
+    <!-- submit -->
+    <button type="button" id="submitBtn" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Submit</button>
+
+</div>
+
+
+<!-- Footer -->
+<footer
+class="footer bottom-0 left-0 z-20 w-full p-4 bg-black border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+<span class="text-sm text-white sm:text-center dark:text-gray-400">© 2023 Triple J Event Venue. All Rights
+  Reserved.
+</span>
+<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+  <li class="px-2.5">123 Anywhere Street | Kansas City, MO 64105 | 816.888.8888</li>
+  <li>
+    <a href="mailto:notarealemail@nothing.com" class="hover:underline px-2.5">Contact Us</a> 
+  </li>
+</ul>
+</footer>
+
+</main>
+<!-- CDNs -->
+<script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+<script src="../path/to/flowbite/dist/datepicker.js"></script>
+
+</body>
+</html>

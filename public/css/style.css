@@ -58,13 +58,6 @@ header .icons span {
     align-items: center;
     justify-content: center;
 }
-/* header .icons span:hover {
-    background-color: burlywood;
-} */
-
-/* header .icons span:last-child {
-margin-right: -10px;
-} */
 
 .calendar {
     display: block;
@@ -74,11 +67,51 @@ margin-right: -10px;
     margin-block-start: 100px;
 }
 
+.calendar.reservation {
+    display: block;
+    align-items: center;
+    margin-left: 250px;
+}
+
+.spaces {
+    display: block;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-block-start: 100px;
+}
+
+.form {
+    display: block;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+/* .toggle {
+    margin-left: 250px;
+} */
 
 .date-picker-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+img {
+    margin: 25px;
 }
 
 .material-symbols-outlined {
@@ -89,3 +122,10 @@ margin-right: -10px;
   'opsz' 48
 }
 
+.footer {
+    margin-top: 50px;
+}
+/* 
+button {
+    background-color: maroon;
+} */
