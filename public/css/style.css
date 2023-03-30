@@ -82,6 +82,19 @@ header .icons span {
     margin-block-start: 100px;
 }
 
+.form {
+    display: block;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+/* .toggle {
+    margin-left: 250px;
+} */
+
 .date-picker-container {
     display: flex;
     justify-content: center;
@@ -112,3 +125,7 @@ img {
 .footer {
     margin-top: 50px;
 }
+/* 
+button {
+    background-color: maroon;
+} */
