@@ -80,6 +80,18 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+// logout
+router.post("/logout", (req, res) => {
+  if (req.session.loggedIn) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+    res.render("/");
+  } else {
+    res.status(404).end();
+  }
+});
+
 // get all users
 router.get("/", async (req, res) => {
   try {
