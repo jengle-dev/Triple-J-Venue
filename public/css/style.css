@@ -102,11 +102,11 @@ header .icons span {
     align-items: center;
 }
 
-.card {
-    margin: 10px;
-    margin-right: 10px;
-    padding: 10px;
-}
+/* .card { */
+    /* margin: 10px; */
+    /* margin-right: 10px; */
+    /* padding: 10px; */
+/* } */
 
 .date-picker-container {
     display: flex;
