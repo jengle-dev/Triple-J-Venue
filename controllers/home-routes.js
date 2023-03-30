@@ -23,8 +23,8 @@ router.get("/about-us", async (req, res) => {
   res.render("about-us");
 });
 
-router.get("/login", async (req, res) => {
-  res.render("login");
+router.get("/spaces", async (req, res) => {
+  res.render("venue-spaces");
 });
 
 module.exports = router;
