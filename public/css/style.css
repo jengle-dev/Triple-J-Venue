@@ -94,6 +94,19 @@ header .icons span {
 /* .toggle {
     margin-left: 250px;
 } */
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    align-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
 
 .date-picker-container {
     display: flex;
