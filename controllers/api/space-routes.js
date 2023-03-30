@@ -1,13 +1,14 @@
 const router = require("express").Router();
-const Space = require("../../models/Space");
-const Event = require("../../models/Event");
+// const Space = require("../../models/Space");
+// const Event = require("../../models/Event");
+const { Space, Event } = require("../../models/");
 
 router.get("/", async (req, res) => {
   try {
     // need to fix error associated with this line
-    // const spaceData = await Space.findAll({ include: [{ model: Event }] });
+    const spaceData = await Space.findAll({ include: [{ model: Event }] });
 
-    const spaceData = await Space.findAll();
+    // const spaceData = await Space.findAll();
     const spaces = spaceData.map((space) => space.get({ plain: true }));
     res.status(200).json(spaces);
   } catch (err) {
