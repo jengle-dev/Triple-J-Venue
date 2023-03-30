@@ -1,5 +1,4 @@
 require("dotenv").config();
-console.log(process.env.JAWS_DB);
 
 const path = require("path");
 
