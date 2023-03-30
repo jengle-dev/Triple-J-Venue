@@ -5,6 +5,7 @@ module.exports = {
       'white': '#f5f5f5',
       'black': '#171717',
       'cream': '#fef3c7',
+      'amber': '#fffbeb',
       'maroon': '#9f1239',
       'slate': '#e4e4e7',
       'lightSlate': '#fafafa'
@@ -21,7 +22,10 @@ module.exports = {
       '5': '32',
       '6': '50px',
       '7': '64px',
-      '8': '80px'
+      '8': '80px',
+      '9': '120px',
+      '10': '150px',
+      '12': '160px'
 
     }
   },
