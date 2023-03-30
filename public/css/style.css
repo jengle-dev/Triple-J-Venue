@@ -67,6 +67,15 @@ header .icons span {
     margin-block-start: 100px;
 }
 
+.spaces {
+    display: block;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-block-start: 100px;
+}
+
 .date-picker-container {
     display: flex;
     justify-content: center;
