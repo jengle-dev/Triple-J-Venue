@@ -67,6 +67,12 @@ header .icons span {
     margin-block-start: 100px;
 }
 
+.calendar.reservation {
+    display: block;
+    align-items: center;
+    margin-left: 250px;
+}
+
 .spaces {
     display: block;
     align-items: center;
