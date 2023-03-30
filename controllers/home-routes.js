@@ -35,4 +35,8 @@ router.get("/spaces", async (req, res) => {
   res.render("venue-spaces");
 });
 
+router.get("/reservation", async (req, res) => {
+  res.render("reservation");
+});
+
 module.exports = router;
