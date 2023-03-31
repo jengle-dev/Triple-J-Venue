@@ -13,61 +13,57 @@
 
 <body>
   <!-- header background image -->
-  <img class="max-h-24 w-full" src="/images/GoldenBokeh-horizontal.png" alt="golden bokeh glitter pattern" />
+  <img class="max-h-24 w-full mx-0 my-0" src="/images/GoldenBokeh-horizontal.png" alt="golden bokeh glitter pattern" />
   <!-- Navbar -->
-  <nav class="bg-black flex h-20">
-    <div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4">
+  <nav class="bg-black h-30 justify-between">
+    <div class="nav max-w-screen-xl flex justify-between mx-auto p-4">
       <div class="relative flex h-24 items-center justify-between">
-        <div class="flex flex-shrink-0 items-center">
+        <div class="flex flex-shrink-0">
           <!-- Logo -->
-          <img class="block h-32 w-auto lg:hidden" src="/images/Triple-J-Logo.png" alt="Triple J Event Venue Logo" />
-          <img class="hidden h-32 w-auto lg:block" src="/images/Triple-J-Logo.png" alt="Triple J Event Venue Logo" />
+          <img class="block h-32 w-auto lg:hidden ml-50" src="/images/Triple-J-Logo.png" alt="Triple J Event Venue Logo" />
+          <img class="hidden h-32 w-auto lg:block ml-50" src="/images/Triple-J-Logo.png" alt="Triple J Event Venue Logo" />
         </div>
         <!-- Nav options -->
-        <div class="flex items-right justify-right sm:items-stretch sm:justify-start">
+<div class="items-right justify-right sm:items-stretch sm:justify-start">
           <div class="hidden sm:ml-6 sm:block">
-            <div
-              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-black md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-black dark:bg-black md:dark:bg-black dark:border-black">
-              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <ul>
-                <li>
-                  <a href="/"
-                    class="bg-gray-900 hover:bg-gray-700 hover:text-white text-white rounded-md px-3 py-2 text-sm font-medium"
-                    aria-current="page">Home</a>
-                </li>
-                <li>
-                  <a href="/spaces"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white text-white rounded-md px-3 py-2 text-sm font-medium"
-                    aria-current="page">Rental Spaces</a>
-                </li>
-                <a href="/about-us"
-                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About
-                  Us</a>
-                </li>
-                <li>
-                  <!-- <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"></a> -->
-                  <a href="/calendar"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Upcoming
-                    Events</a>
-                </li>
-                <li>
-                  <a href="/reservation"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Reservation</a>
-                </li>
-              </ul>
+<div class="font-medium flex p-3 md:p-0 mt-3 border border-gray-100 rounded-lg bg-black md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-black dark:bg-black md:dark:bg-black dark:border-black">              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+<ul>
+  <li>
+              <a href="/"
+                class="bg-gray-900 hover:bg-gray-700 hover:text-white text-white rounded-md px-3 py-2 text-sm font-medium"
+                aria-current="page">Home</a>
+</li>
+<li>
+              <a href="/spaces"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white text-white rounded-md px-3 py-2 text-sm font-medium"
+                aria-current="page">Rental Spaces</a>
+</li>
+              <a href="/about-us"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About
+                Us</a>
+</li>
+<li>
+              <!-- <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"></a> -->
+              <a href="/calendar"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Upcoming Events</a>
+</li>
+<li>
+  <a href="/reservation"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Reserve Now</a>
+</li>
               <!-- hide if session is true -->
               {{#if loggedIn}}
               <a href="/"
-                class="block pl-3 pr-4 text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent sign out">Sign
+                class="logout text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium sign-out">Sign
                 Out</a>
-
+             
               <!-- hide if session is false -->
               {{else}}
-
-              <a href="/login"
-                class="block pt-8 pr-4 text-white justify-center hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent sign-in">Sign
+             
+                <a href="/login"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium sign-in">Sign
                 In</a>
-              {{/if}}
+                {{/if}}
             </div>
           </div>
         </div>
