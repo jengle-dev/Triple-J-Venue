@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&display=swap');
+/* @import url('/tailwind.config.js') */
 
 *{
     margin: 0;
@@ -11,8 +12,16 @@ body {
     display: block;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: burlywood;
+}
+
+h1 {
+    padding-top: 70px;
+}
+
+h1.text-center{
+    padding-top: 25px;
 }
 
 .container {
@@ -91,9 +100,6 @@ header .icons span {
     padding-top: 15px;
 }
 
-/* .toggle {
-    margin-left: 250px;
-} */
 .cardContainer {
     display: flex;
     flex-wrap: wrap;
@@ -102,11 +108,6 @@ header .icons span {
     align-items: center;
 }
 
-/* .card { */
-    /* margin: 10px; */
-    /* margin-right: 10px; */
-    /* padding: 10px; */
-/* } */
 
 .date-picker-container {
     display: flex;
@@ -127,6 +128,10 @@ img {
     margin: 25px;
 }
 
+ul li {
+    display: flex;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -138,7 +143,3 @@ img {
 .footer {
     margin-top: 50px;
 }
-/* 
-button {
-    background-color: maroon;
-} */
