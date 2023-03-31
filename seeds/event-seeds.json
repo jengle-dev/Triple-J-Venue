@@ -1,14 +1,14 @@
 [
   {
     "date": "2023-03-27",
-    "event_name": "Event 1",
+    "event_name": "Birthday Party",
     "start_time": "09:00:00",
     "end_time": "11:00:00",
     "status": "approved"
   },
   {
     "date": "2023-03-28",
-    "event_name": "Event 2",
+    "event_name": "Private Event",
     "start_time": "13:00:00",
     "end_time": "15:00:00",
     "status": "pending"
@@ -24,20 +24,20 @@
   },
   {
     "date": "2023-03-30",
-    "event_name": "Event 4",
-    "start_time": "14:00:00",
-    "end_time": "16:00:00",
+    "event_name": "Wedding Reception",
+    "start_time": "16:30:00",
+    "end_time": "21:00:00",
     "status": "approved"
   },
   {
     "date": "2023-03-31",
-    "event_name": "Event 5",
+    "event_name": "Business Training",
     "start_time": "11:00:00",
     "end_time": "13:00:00",
     "status": "pending"
   },
   {
-    "date": "2023-04-01",
+    "date": "Business Tax Training",
     "event_name": "Event 6",
     "start_time": "09:00:00",
     "end_time": "11:00:00",
