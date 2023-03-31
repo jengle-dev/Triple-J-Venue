@@ -37,9 +37,9 @@ A user will be able to navigate the application to view available venue spaces a
 If there are issues with the site, please reach out to me, Jennifer Engle, at j.engle.dev@gmail.com, Jacob Boyce, at jboyce313@gmail.com, and Jacob Kouns, at jacob.kouns01@gmail.com, and reference the site's URL. Please provide any screenshots and behavior along with your browser information.
 
 ## Contributing
-Jacob Boyce - jboyce313@gmail.com GH: https://github.com/jboyce313
-Jennifer Engle - j.engle.dev@gmail.com GH: https://github.com/jengle-dev
-Jacob Kouns -  jacob.kouns01@gmail.com GH: https://github.com/Jkouns01
+* Jacob Boyce - jboyce313@gmail.com GH: https://github.com/jboyce313
+* Jennifer Engle - j.engle.dev@gmail.com GH: https://github.com/jengle-dev
+* Jacob Kouns -  jacob.kouns01@gmail.com GH: https://github.com/Jkouns01
 
 ## License
 There is no license for this project.
